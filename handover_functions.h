@@ -7,7 +7,7 @@
 //Beispielfunktion für Funktionszeiger
 void printInt(int val)
 {
-    std::cout << "an integer called " << val << std::endl;
+    std::cout << "an integer containing " << val << std::endl;
 }
 
 //Beispielfunktion/Struct für Functor
@@ -22,7 +22,7 @@ struct add_x {
 
 //Beispiel für LambdaExpression
 //http://www.drdobbs.com/cpp/lambdas-in-c11/240168241
-std::function<void()> greetWorld = {
+std::function<void()> greetWorld = [](){
         std::cout << "hello ";
         std::cout << "World! " << std::endl;
         };

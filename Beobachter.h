@@ -5,9 +5,6 @@
 
 class Beobachter
 {
-protected:
-
-
 public:
     virtual void aktualisiere(int temp) =0;
 };
